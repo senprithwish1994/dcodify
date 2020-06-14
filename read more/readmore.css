@@ -1,0 +1,43 @@
+#wrap p {
+    text-indent: 30px;
+    line-height: 1em;
+}
+
+.readmore {
+    max-height: 2em;
+    overflow: hidden;
+    color: rgba(0,0,0,.2);
+    
+    transition: all .5s;
+}
+
+.readmore::before {
+    content: "Read more ...";
+    font-weight: 600;
+    color: initial;
+}
+
+.readmore:hover {
+    color: initial;
+    max-height: 100vh;
+    overflow: initial;
+    text-indent: 30px;
+}
+
+.readmore:hover::before {
+    content: "";
+}
+
+.next {
+    width: 100%;
+    background-color: pink;
+}
+
+.next a {
+    float: right;
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
